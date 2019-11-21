@@ -23,6 +23,15 @@ namespace Conditionals {
         }
       }
 
+      while (true) {
+        Console.Write ("Type your name:");
+        string input = Console.ReadLine ();
+        if (String.IsNullorWhiteSpace (input)) {
+          break;
+        }
+        Console.WriteLine ("@echo: " + input);
+      }
+
     }
   }
 }
