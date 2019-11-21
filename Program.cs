@@ -26,10 +26,11 @@ namespace Conditionals {
       while (true) {
         Console.Write ("Type your name:");
         string input = Console.ReadLine ();
-        if (String.IsNullorWhiteSpace (input)) {
-          break;
+        if (!String.IsNullorWhiteSpace (input)) {
+          Console.WriteLine ("@echo: " + input);
+          continue;
         }
-        Console.WriteLine ("@echo: " + input);
+        break;
       }
 
     }
